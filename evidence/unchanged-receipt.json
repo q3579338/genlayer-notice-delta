@@ -1,0 +1,139 @@
+{
+  "hash": "0xcc81036ed3a7e73f864f59e63c7f7d0d97e62a07043ec5eef784c5adb446ebc0",
+  "address": "0x3B821AaD4Fc693f5518f74E2DD0eB9deC3A4B394",
+  "status": "FINALIZED",
+  "result": "MAJORITY_AGREE",
+  "execution": [
+    {
+      "mode": "leader",
+      "result": "SUCCESS",
+      "error": null,
+      "stderr": ""
+    },
+    {
+      "mode": "validator",
+      "result": "SUCCESS",
+      "error": null,
+      "stderr": ""
+    }
+  ],
+  "votes": {
+    "0x0B50B270Eba5D9B780272C4Cf4720260177e761D": "agree",
+    "0x7bf4Ea55363bbe73A4dd5b3900bf03c978A63b6e": "agree",
+    "0x9244De5F20cB75A0c51d79A9A3208D00a99aFc10": "agree",
+    "0xb0925568bFbCF00aADBcA053E6D0E1628ff3d530": "idle",
+    "0xf1C7551292319EE334e2D8A24eAC108Bd4C63b21": "idle"
+  },
+  "createdAt": "2026-10-22T00:12:55.298802+00:00",
+  "sender": "0xc165fb1e77a09f9791BCB56480a91ffc68b1Ba83",
+  "recipient": "0x3B821AaD4Fc693f5518f74E2DD0eB9deC3A4B394",
+  "data": {
+    "calldata": {
+      "base64": "FgRhcmdzFQncAW5vdGljZV9jb21wYXJlX3VuY2hhbmdlZF8wMQZtZXRob2R0Y29tcGFyZV9ub3RpY2U=",
+      "raw": [
+        22,
+        4,
+        97,
+        114,
+        103,
+        115,
+        21,
+        9,
+        220,
+        1,
+        110,
+        111,
+        116,
+        105,
+        99,
+        101,
+        95,
+        99,
+        111,
+        109,
+        112,
+        97,
+        114,
+        101,
+        95,
+        117,
+        110,
+        99,
+        104,
+        97,
+        110,
+        103,
+        101,
+        100,
+        95,
+        48,
+        49,
+        6,
+        109,
+        101,
+        116,
+        104,
+        111,
+        100,
+        116,
+        99,
+        111,
+        109,
+        112,
+        97,
+        114,
+        101,
+        95,
+        110,
+        111,
+        116,
+        105,
+        99,
+        101
+      ],
+      "readable": "{\"args\":[1,\"notice_compare_unchanged_01\",]\"method\":\"compare_notice\"}"
+    }
+  },
+  "leaderReceipt": [
+    {
+      "execution_result": "SUCCESS",
+      "result": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "genvm_result": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      }
+    },
+    {
+      "execution_result": "SUCCESS",
+      "result": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "genvm_result": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      }
+    }
+  ]
+}

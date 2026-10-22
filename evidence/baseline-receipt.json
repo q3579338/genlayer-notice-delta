@@ -1,0 +1,111 @@
+{
+  "hash": "0x53e5c8e67574154efb62756fef4322a159d1f3ed2b14e69ecf3bbf6075531b89",
+  "address": "0x3B821AaD4Fc693f5518f74E2DD0eB9deC3A4B394",
+  "status": "FINALIZED",
+  "result": "MAJORITY_AGREE",
+  "execution": [
+    {
+      "mode": "leader",
+      "result": "SUCCESS",
+      "error": null,
+      "stderr": ""
+    },
+    {
+      "mode": "validator",
+      "result": "ERROR",
+      "stderr": "Validator execution cancelled after quorum"
+    }
+  ],
+  "votes": {
+    "0x0B50B270Eba5D9B780272C4Cf4720260177e761D": "idle",
+    "0x1dEcE6A694520b1d3a2e24b9f28500858C756BDb": "agree",
+    "0x2FcBC452425f2F1e102c5c04b4331fcB46ee1c00": "agree",
+    "0x892C437da9b9CA0b6017B6f046F58E3526B46ec6": "agree",
+    "0xa21bc502E3578E4b3039be8c59a257198f7c3f19": "idle"
+  },
+  "createdAt": "2026-10-22T00:09:26.195171+00:00",
+  "sender": "0xc165fb1e77a09f9791BCB56480a91ffc68b1Ba83",
+  "recipient": "0x3B821AaD4Fc693f5518f74E2DD0eB9deC3A4B394",
+  "data": {
+    "calldata": {
+      "base64": "FgRhcmdzDQkGbWV0aG9khAFjYXB0dXJlX2Jhc2VsaW5l",
+      "raw": [
+        22,
+        4,
+        97,
+        114,
+        103,
+        115,
+        13,
+        9,
+        6,
+        109,
+        101,
+        116,
+        104,
+        111,
+        100,
+        132,
+        1,
+        99,
+        97,
+        112,
+        116,
+        117,
+        114,
+        101,
+        95,
+        98,
+        97,
+        115,
+        101,
+        108,
+        105,
+        110,
+        101
+      ],
+      "readable": "{\"args\":[1,]\"method\":\"capture_baseline\"}"
+    }
+  },
+  "leaderReceipt": [
+    {
+      "execution_result": "SUCCESS",
+      "result": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "genvm_result": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      }
+    },
+    {
+      "execution_result": "ERROR",
+      "result": {
+        "raw": "AmlkbGU=",
+        "status": "contract_error",
+        "payload": "idle"
+      },
+      "genvm_result": {
+        "stderr": "Validator execution cancelled after quorum",
+        "stdout": "",
+        "raw_error": {
+          "fatal": false,
+          "causes": [
+            "VALIDATOR_QUORUM_REACHED"
+          ]
+        },
+        "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+      }
+    }
+  ]
+}

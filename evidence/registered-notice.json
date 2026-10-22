@@ -1,0 +1,17 @@
+{
+  "baseline": null,
+  "baseline_ready": false,
+  "created_at": 1792627670,
+  "criteria": [
+    "The closing date and time for applications to the example workshop"
+  ],
+  "id": 1,
+  "input_hash": "c59fd21dd329824b281a96c7b23fe95af9c6c7cde3f2becad0bc3cc3c34813ed",
+  "last_status": "BASELINE_REQUIRED",
+  "latest": null,
+  "owner": "0xc165fb1e77a09f9791bcb56480a91ffc68b1ba83",
+  "request_id": "notice_live_20261022_01",
+  "revision": 0,
+  "source_url": "https://raw.githubusercontent.com/q3579338/genlayer-notice-delta/main/fixtures/announcement.md",
+  "title": "Controlled workshop announcement"
+}

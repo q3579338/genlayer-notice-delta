@@ -1,0 +1,39 @@
+{
+  "network": "studionet",
+  "chainId": 61999,
+  "address": "0x3B821AaD4Fc693f5518f74E2DD0eB9deC3A4B394",
+  "sourceMatches": true,
+  "receipt": {
+    "hash": "0x0f99e5b2c44bcb5e322f4d56241c77eff1836272a9b5b0dcfcff40eb55a2b197",
+    "address": "0x3B821AaD4Fc693f5518f74E2DD0eB9deC3A4B394",
+    "status": "FINALIZED",
+    "result": "MAJORITY_AGREE",
+    "execution": [
+      {
+        "mode": "leader",
+        "result": "SUCCESS",
+        "error": null,
+        "stderr": ""
+      },
+      {
+        "mode": "validator",
+        "result": "SUCCESS",
+        "error": null,
+        "stderr": ""
+      }
+    ],
+    "votes": {
+      "0x1dEcE6A694520b1d3a2e24b9f28500858C756BDb": "idle",
+      "0x7bf4Ea55363bbe73A4dd5b3900bf03c978A63b6e": "agree",
+      "0xb0925568bFbCF00aADBcA053E6D0E1628ff3d530": "agree",
+      "0xf1C7551292319EE334e2D8A24eAC108Bd4C63b21": "agree",
+      "0xf29b6947ed298d139FC2655DB15D868C9AbB3091": "agree"
+    },
+    "createdAt": "2026-10-22T00:05:48.578048+00:00"
+  },
+  "stats": {
+    "count": 0,
+    "scope": "studionet-prototype",
+    "version": "notice-delta/0.1.0"
+  }
+}

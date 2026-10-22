@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-10-22T00:15:05.7502688Z",
+  "appVersion": "notice-delta/0.1.0",
+  "frontendTestsPassed": 7,
+  "typeCheck": "passed",
+  "productionBuild": "passed",
+  "productionContract": "0x3B821AaD4Fc693f5518f74E2DD0eB9deC3A4B394",
+  "deploymentTx": "0x0f99e5b2c44bcb5e322f4d56241c77eff1836272a9b5b0dcfcff40eb55a2b197",
+  "desktopAndPhoneViewports": [
+    "1440x1000",
+    "768x1024",
+    "390x844",
+    "320x740"
+  ],
+  "walletConnection": {
+    "noSnapInstall": true,
+    "noCallsOnLoad": true,
+    "methods": [
+      "eth_requestAccounts",
+      "eth_accounts",
+      "eth_chainId"
+    ],
+    "noSigning": true
+  },
+  "safeArea": {
+    "scope": "headless simulated CSS insets, not physical phone notch validation",
+    "dpr": [
+      2,
+      3
+    ],
+    "passed": 4,
+    "insets": {
+      "left": 24,
+      "right": 24,
+      "bottom": 34,
+      "top": 44
+    },
+    "orientations": [
+      "390x844",
+      "844x390"
+    ]
+  },
+  "readOnlyChainCheck": {
+    "sourceAndVersionMatch": true,
+    "loaded": true,
+    "transactionsSent": 0,
+    "notices": 1,
+    "walletCalls": 0
+  },
+  "limits": [
+    "No physical device test",
+    "No browser wallet signing or full front-end live write test",
+    "Root agent separately owns signed chain validation and publication"
+  ]
+}
