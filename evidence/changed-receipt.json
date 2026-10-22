@@ -1,0 +1,39 @@
+{
+  "hash": "0x2c0b528cddca80c64af46c79a41ace631558c0e97b1ffc2277f7e716f258b58c",
+  "address": "0x3B821AaD4Fc693f5518f74E2DD0eB9deC3A4B394",
+  "status": "FINALIZED",
+  "result": "MAJORITY_AGREE",
+  "execution": [
+    {
+      "mode": "leader",
+      "execution_result": "SUCCESS",
+      "result": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "mode": "validator",
+      "execution_result": "SUCCESS",
+      "result": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "stderr": ""
+    }
+  ],
+  "created_at": "2026-10-22T00:22:23.710169+00:00"
+}

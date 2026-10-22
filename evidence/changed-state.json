@@ -1,0 +1,46 @@
+{
+  "baseline": {
+    "anchors": [
+      "# NoticeDelta controlled test announcement\n\nThis is a synthetic announcement maintained solely for reproducible software tests.\nIt is not a real campaign, reward promise, or statement from GenLayer Foundation.\n\nApplications for the example workshop close on 30 October 2026 at 18:00 UTC.\nApplicants must submit one working open-source prototype.\nThe example wo"
+    ],
+    "observed_at": 1792627766,
+    "source_hash": "f1940854ce85f2827c30dfc824b25778079bea8f41414606545fd24334e9e104",
+    "text": "# NoticeDelta controlled test announcement\n\nThis is a synthetic announcement maintained solely for reproducible software tests.\nIt is not a real campaign, reward promise, or statement from GenLayer Foundation.\n\nApplications for the example workshop close on 30 October 2026 at 18:00 UTC.\nApplicants must submit one working open-source prototype.\nThe example workshop offers educational feedback only, with no financial reward.\n\nVersion: baseline-v1."
+  },
+  "baseline_ready": true,
+  "created_at": 1792627670,
+  "criteria": [
+    "The closing date and time for applications to the example workshop"
+  ],
+  "id": 1,
+  "input_hash": "c59fd21dd329824b281a96c7b23fe95af9c6c7cde3f2becad0bc3cc3c34813ed",
+  "last_status": "UNCHANGED",
+  "latest": {
+    "baseline_hash": "f1940854ce85f2827c30dfc824b25778079bea8f41414606545fd24334e9e104",
+    "findings": [
+      {
+        "baseline_quote": "# NoticeDelta controlled test announcement\n\nThis is a synthetic announcement maintained solely for reproducible software tests.\nIt is not a real campaign, reward promise, or statement from GenLayer Foundation.\n\nApplications for the example workshop close on 30 October 2026 at 18:00 UTC.\nApplicants must submit one working open-source prototype.\nThe example wo",
+        "criterion": "The closing date and time for applications to the example workshop",
+        "current_quote": "# NoticeDelta controlled test announcement\n\nThis is a synthetic announcement maintained solely for reproducible software tests.\nIt is not a real campaign, reward promise, or statement from GenLayer Foundation.\n\nApplications for the example workshop close on 30 October 2026 at 18:00 UTC.\nApplicants must submit one working open-source prototype.\nThe example wo",
+        "index": 0,
+        "reason": "Canonical source text and the evidenced baseline condition are unchanged.",
+        "status": "UNCHANGED"
+      }
+    ],
+    "input_hash": "c59fd21dd329824b281a96c7b23fe95af9c6c7cde3f2becad0bc3cc3c34813ed",
+    "notice_id": 1,
+    "observed_at": 1792628543,
+    "previous_hash": "85cb291640aaf8484ebe0cbe4d908c75fe3affdf2983c4c13a5ff665d24b51b8",
+    "record_hash": "71e794bdfb08d6038cf6c5bdf1cb242fbf6dda5dc76d96a23716d7565b0eb42c",
+    "request_id": "notice_compare_changed_01",
+    "revision": 2,
+    "snapshot_text": "# NoticeDelta controlled test announcement\n\nThis is a synthetic announcement maintained solely for reproducible software tests.\nIt is not a real campaign, reward promise, or statement from GenLayer Foundation.\n\nApplications for the example workshop close on 30 October 2026 at 18:00 UTC.\nApplicants must submit one working open-source prototype.\nThe example workshop offers educational feedback only, with no financial reward.\n\nVersion: baseline-v1.",
+    "source_hash": "f1940854ce85f2827c30dfc824b25778079bea8f41414606545fd24334e9e104",
+    "status": "UNCHANGED"
+  },
+  "owner": "0xc165fb1e77a09f9791bcb56480a91ffc68b1ba83",
+  "request_id": "notice_live_20261022_01",
+  "revision": 2,
+  "source_url": "https://raw.githubusercontent.com/q3579338/genlayer-notice-delta/main/fixtures/announcement.md",
+  "title": "Controlled workshop announcement"
+}
