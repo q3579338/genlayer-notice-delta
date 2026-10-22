@@ -26,7 +26,7 @@ The offline example is explicitly marked and never written to the real transacti
 
 `evidence/deployment.json` records finality, execution success and exact deployed-source matching. `register-receipt.json`, `baseline-receipt.json` and `baseline-state.json` record real Studio calls and the evidence anchor. The controlled example in `fixtures/announcement.md` is **synthetic test data, not an actual event or reward**.
 
-The public GitHub repository has been created, but publishing the complete source is awaiting the user's explicit approval. Do not describe the fixture-only initial public commit as publication of the application. The Sites preview is owner-private unless the user explicitly changes its audience.
+The user explicitly authorized publication on 2026-10-22. The live public application is [NoticeDelta](https://notice-delta-genlayer-q3579338.q3579338.chatgpt.site), with source being released to [q3579338/genlayer-notice-delta](https://github.com/q3579338/genlayer-notice-delta). The controlled fixture's mutable branch is intentionally changed only for the documented live change test; its baseline text is retained in the contract and earlier Git commits.
 
 ## Development
 
