@@ -28,7 +28,18 @@ The offline example is explicitly marked and never written to the real transacti
 
 The complete [live validation record](evidence/LIVE_VALIDATION.md) includes an unchanged-source review and a finalized semantic change review from 30 October to 6 November. It also preserves a prior stale-cache observation instead of counting it as change-detection success. Source freshness depends on the upstream/host caches; the app does not promise immediate propagation.
 
-The user explicitly authorized publication on 2026-10-22. The live public application is [NoticeDelta](https://notice-delta-genlayer-q3579338.q3579338.chatgpt.site), with source being released to [q3579338/genlayer-notice-delta](https://github.com/q3579338/genlayer-notice-delta). The controlled fixture's mutable branch is intentionally changed only for the documented live change test; its baseline text is retained in the contract and earlier Git commits.
+The live public application is [NoticeDelta](https://notice-delta-genlayer-q3579338.q3579338.chatgpt.site); this repository and the Portal project contribution were published/submitted on 2026-10-22. Acceptance and awarded points require separate Portal confirmation. The controlled fixture's mutable branch was intentionally changed for the documented live change test; its baseline text is retained in the contract and in the fixed snapshots below.
+
+### Fixed snapshots for evidence review
+
+The source bodies used in the recorded comparison are available through immutable Git commit URLs:
+
+| Snapshot | Public source body | Raw-body SHA-256 | NoticeDelta canonical-text SHA-256 |
+| --- | --- | --- | --- |
+| Baseline: 30 October | [450-byte baseline](https://raw.githubusercontent.com/q3579338/genlayer-notice-delta/f2e77496d31cd2e92a60906e6f02d9256700f14b/fixtures/announcement.md) | `9b7ef32ce39692d42629c0f5f45f24a11b0f1c5a8efe63088300f85b2f256e8d` | `f1940854ce85f2827c30dfc824b25778079bea8f41414606545fd24334e9e104` |
+| Changed: 6 November | [506-byte comparison](https://raw.githubusercontent.com/q3579338/genlayer-notice-delta/e0924adc558bb819ff609b06d8fe78b584a69c7e/fixtures/announcement.md) | `8d0572dcd116956e41f43eac19d2c7a71b6bdad0eb6bfef01cb77f9c493de540` | `a44a266f9cffc7e75f949a547cb4d94b6d7a2de4677faf712c654adf8c040843` |
+
+The canonical-text hashes match `baseline-state.json` and `changed-retry-state.json`; they identify the contract's normalized source text and are distinct from hashes of the raw HTTP response bytes. The original registered `main` URL and chain receipts remain unchanged. These snapshots let reviewers inspect the historical bytes even after the mutable branch changes; they do not assert a new contract call. Links, sizes and hashes were rechecked on 2026-10-26.
 
 ## Development
 
@@ -48,7 +59,7 @@ Contract tests explicitly use a host stub: they test state transitions and fail-
 
 `register_notice(request_id, source_url, title, criteria)` creates an immutable notice. Reusing the same owner/request ID with the same input returns its existing ID; different input is refused. `capture_baseline(id)` freezes the first valid, evidenced source and cannot replace it. `compare_notice(id, request_id)` appends a review; reusing its request ID does not append another review.
 
-Only the owner can write. Other users may inspect records. The prototype allows 20 notices per owner, 20 reviews per notice, canonical source text of 40–16,000 characters, and quotations of 12–360 characters. Unavailable sources produce retryable failures or `UNKNOWN`, never a claim that the conditions did not change.
+Only the owner can write. Other users may inspect records. The prototype allows 20 notices per owner, 20 reviews per notice, canonical source text of 40�C16,000 characters, and quotations of 12�C360 characters. Unavailable sources produce retryable failures or `UNKNOWN`, never a claim that the conditions did not change.
 
 Allowed initial hosts are the exact public GenLayer hosts and GitHub hosts listed in `contracts/NoticeDelta.py`. URLs must use HTTPS with no credentials, custom ports or fragments. The underlying web API does not expose final redirect provenance, so this is **not** a guarantee against every redirect or a verification of publisher identity.
 
