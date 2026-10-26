@@ -59,7 +59,7 @@ Contract tests explicitly use a host stub: they test state transitions and fail-
 
 `register_notice(request_id, source_url, title, criteria)` creates an immutable notice. Reusing the same owner/request ID with the same input returns its existing ID; different input is refused. `capture_baseline(id)` freezes the first valid, evidenced source and cannot replace it. `compare_notice(id, request_id)` appends a review; reusing its request ID does not append another review.
 
-Only the owner can write. Other users may inspect records. The prototype allows 20 notices per owner, 20 reviews per notice, canonical source text of 40�C16,000 characters, and quotations of 12�C360 characters. Unavailable sources produce retryable failures or `UNKNOWN`, never a claim that the conditions did not change.
+Only the owner can write. Other users may inspect records. The prototype allows 20 notices per owner, 20 reviews per notice, canonical source text of 40–16,000 characters, and quotations of 12–360 characters. Unavailable sources produce retryable failures or `UNKNOWN`, never a claim that the conditions did not change.
 
 Allowed initial hosts are the exact public GenLayer hosts and GitHub hosts listed in `contracts/NoticeDelta.py`. URLs must use HTTPS with no credentials, custom ports or fragments. The underlying web API does not expose final redirect provenance, so this is **not** a guarantee against every redirect or a verification of publisher identity.
 
